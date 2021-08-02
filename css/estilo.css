@@ -1,0 +1,234 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Source Serif Pro', serif; }
+
+h2 {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.principalTitulo {
+  background-image: url("http://imgfz.com/i/HiDEXIq.jpeg");
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; }
+
+.principalTitulo h1 {
+  font-size: 6rem;
+  font-family: 'Limelight', cursive;
+  color: red;
+  text-align: left;
+  width: 55%; }
+
+#buscador {
+  color: black;
+  width: 35%;
+  height: 3rem;
+  padding-left: 2rem; }
+
+.principalMenu {
+  width: 100%;
+  display: flex;
+  font-size: 1.8rem;
+  background-color: rgba(255, 255, 0, 0.425); }
+
+.principalLista {
+  width: 70%; }
+
+.linkPrincipalLista {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+
+#principalMenuContacto {
+  margin-left: 35rem; }
+
+.lanzamientoLibros {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  list-style: none; }
+
+.lanzamientoLibros img {
+  width: 20rem;
+  margin-bottom: 6rem; }
+
+.lanzamientoLibros img:hover {
+  transform: scale(1.2); }
+
+.lomas {
+  padding-bottom: 1rem; }
+
+#ricardo {
+  font-size: 1.7rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem; }
+
+.escritorMes {
+  margin-bottom: 2rem; }
+
+.escritorMes p {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+.escritorMesBiografia {
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  align-items: center; }
+
+.pie {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+/*Página Libros*/
+.librosCatalogoLibros {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: 6fr 6fr; }
+
+.librosLanzamientoLibros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none; }
+
+.librosLanzamientoLibros img {
+  width: 20rem;
+  margin-bottom: 6rem; }
+
+.librosLanzamientoLibros img:hover {
+  transform: scale(1.2); }
+
+/*Fin página Libros"
+
+/*Página nescritores*/
+.marin {
+  margin-top: 3rem; }
+
+/*Página de Contacto*/
+.contacto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2rem; }
+
+/*Página 404*/
+.maf {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2rem; }
+
+/*Responsive*/
+@media (max-width: 599px) {
+  h2 {
+    text-align: center; }
+  .lanzamientoLibros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 6fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .librosCatalogoLibros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 6fr; }
+  .escritorMesBiografia img {
+    width: 20rem; }
+  .principalTitulo h1 {
+    font-size: 4rem; }
+  #principalMenuContacto {
+    margin-left: 0; }
+  .principalMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem; }
+  .maf img {
+    width: 35rem; } }
+
+@media (min-width: 600px) {
+  .lanzamientoLibros {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 6fr 6fr; }
+  .librosCatalogoLibros {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 6fr 6fr; }
+  .escritorMesBiografia img {
+    width: 40rem; }
+  .principalTitulo h1 {
+    font-size: 4rem; }
+  #principalMenuContacto {
+    margin-left: 0; }
+  .principalMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.8rem; }
+  .maf img {
+    width: 70rem; } }
+
+@media (min-width: 811px) {
+  .lanzamientoLibros {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 6fr 6fr; }
+  .librosCatalogoLibros {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 6fr 6fr; }
+  .principalTitulo h1 {
+    font-size: 5rem; }
+  #principalMenuContacto {
+    margin-left: 0; }
+  .principalMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2.3rem; }
+  .escritorMesBiografia img {
+    width: 60rem; }
+  .maf img {
+    width: 100rem; } }
+
+@media (min-width: 1024px) {
+  .lanzamientoLibros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem; }
+  .librosCatalogoLibros {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 6fr 6fr; }
+  .escritorMesBiografia img {
+    width: 80rem; }
+  .principalTitulo h1 {
+    font-size: 6rem; } }
